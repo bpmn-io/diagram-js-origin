@@ -1,6 +1,6 @@
 {
   "name": "diagram-js-origin",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A origin crosshair for diagram-js",
   "scripts": {
     "test": "grunt test"
@@ -34,9 +34,9 @@
     "karma-mocha": "^0.1.7",
     "chai": "^1.9.1",
     "karma-chai": "^0.1.0",
-    "diagram-js": "^0.7.0"
+    "diagram-js": "^0.8.0"
   },
   "peerDependencies": {
-    "diagram-js": "^0.7.0"
+    "diagram-js": "^0.8.0"
   }
 }
