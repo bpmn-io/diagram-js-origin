@@ -17,6 +17,9 @@
   ],
   "author": "bpmn.io",
   "license": "MIT",
+  "dependencies": {
+    "tiny-svg": "^0.1.0"
+  },
   "devDependencies": {
     "brfs": "^1.2.0",
     "chai": "^1.9.1",
