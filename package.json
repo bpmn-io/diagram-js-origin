@@ -45,6 +45,6 @@
     "time-grunt": "~0.3.0"
   },
   "peerDependencies": {
-    "diagram-js": "^0.x"
+    "diagram-js": "<1.0.0"
   }
 }
