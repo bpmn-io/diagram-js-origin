@@ -1,11 +1,12 @@
 require('diagram-js/test/helper');
 
-/* global bootstrapDiagram */
+/* global bootstrapDiagram, inject */
 
 
-var originModule = require('../../');
+var originModule = require('../');
 
 var innerSVG = require('tiny-svg/lib/innerSVG');
+
 
 describe('origin', function() {
 
