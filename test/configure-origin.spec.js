@@ -28,7 +28,7 @@ describe('origin', function() {
     it('should exist in canvas', inject(function(canvas) {
 
       // given
-      var layer = canvas.getLayer('bg');
+      var layer = canvas.getLayer('djs-origin');
 
       var label = layer.querySelector('.djs-origin-label'),
           cross = layer.querySelector('.djs-origin-cross'),
@@ -59,12 +59,49 @@ describe('origin', function() {
     it('should hide border', inject(function(canvas) {
 
       // given
-      var layer = canvas.getLayer('bg');
+      var layer = canvas.getLayer('djs-origin');
 
       var border = layer.querySelector('.djs-origin-border');
 
       // then
       expect(border).not.to.exist;
+    }));
+
+  });
+
+
+  describe('layering', function() {
+
+    beforeEach(bootstrapDiagram({
+      modules: [
+        {
+          __init__: [ 'foo' ],
+          foo: [ 'type', function(canvas) {
+            canvas.getDefaultLayer();
+          }]
+        },
+        originModule,
+        {
+          config: [ 'value', { origin: { showBorder: false } } ]
+        }
+      ]
+    }));
+
+
+    function layerIndex(layer) {
+      var indexOf = Array.prototype.indexOf;
+
+      return indexOf.call(layer.parentNode.childNodes, layer);
+    }
+
+    it('should hide border', inject(function(canvas) {
+
+      // given
+      var originLayer = canvas.getLayer('djs-origin');
+      var defaultLayer = canvas.getDefaultLayer();
+
+      // then
+      expect(layerIndex(originLayer)).to.be.below(layerIndex(defaultLayer));
     }));
 
   });
