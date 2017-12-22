@@ -44,6 +44,7 @@ describe('origin', function() {
 
   });
 
+
   describe('no border', function() {
 
     beforeEach(bootstrapDiagram({
@@ -102,6 +103,51 @@ describe('origin', function() {
 
       // then
       expect(layerIndex(originLayer)).to.be.below(layerIndex(defaultLayer));
+    }));
+
+  });
+
+
+  describe('colors', function() {
+
+    beforeEach(bootstrapDiagram({
+      modules: [
+        originModule,
+        {
+          config: [ 'value', {
+            origin: {
+              showBorder: true,
+              borderColor: '#ff00ff',
+              crossColor: '#008000'
+            }
+          } ]
+        }
+      ]
+    }));
+
+
+    function getFill(el) {
+      return el.style.fill;
+    }
+
+    function getStroke(el) {
+      return el.style.stroke;
+    }
+
+
+    it('should customize colors', inject(function(canvas) {
+
+      // given
+      var layer = canvas.getLayer('djs-origin');
+
+      var label = layer.querySelector('.djs-origin-label'),
+          cross = layer.querySelector('.djs-origin-cross'),
+          border = layer.querySelector('.djs-origin-border');
+
+      // then
+      expect(getFill(label)).to.eql('#008000');
+      expect(getStroke(cross)).to.eql('#008000');
+      expect(getStroke(border)).to.eql('#ff00ff');
     }));
 
   });
