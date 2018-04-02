@@ -20,7 +20,10 @@ module.exports = function(karma) {
 
     // browserify configuration
     browserify: {
-      transform: [ 'brfs' ],
+      transform: [
+        [ 'babelify', { global: true } ],
+        [ 'brfs', { global: true } ]
+      ],
       debug: true
     }
   });

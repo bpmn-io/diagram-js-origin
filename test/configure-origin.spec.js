@@ -1,13 +1,14 @@
-'use strict';
+import {
+  bootstrapDiagram,
+  inject
+} from 'diagram-js/test/helper';
 
-require('diagram-js/test/helper');
 
-/* global bootstrapDiagram, inject */
+import originModule from '../';
 
-
-var originModule = require('../');
-
-var innerSVG = require('tiny-svg/lib/innerSVG');
+import {
+  innerSVG
+} from 'tiny-svg';
 
 
 describe('origin', function() {

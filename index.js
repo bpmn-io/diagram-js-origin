@@ -1,3 +1,7 @@
-module.exports = {
-  __init__: [ require('./lib/configure-origin') ]
+import configureOrigin from './lib/configure-origin';
+
+export default {
+  __init__: [
+    configureOrigin
+  ]
 };
