@@ -19,7 +19,7 @@
   "author": "bpmn.io",
   "license": "MIT",
   "dependencies": {
-    "tiny-svg": "^1.1.0"
+    "tiny-svg": "^2.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
