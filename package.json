@@ -1,6 +1,6 @@
 {
   "name": "diagram-js-origin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A origin crosshair for diagram-js",
   "scripts": {
     "all": "run-s lint test",
