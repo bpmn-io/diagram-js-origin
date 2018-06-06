@@ -50,11 +50,11 @@ describe('origin', function() {
 
     beforeEach(bootstrapDiagram({
       modules: [
-        originModule,
-        {
-          config: [ 'value', { origin: { showBorder: false } } ]
-        }
-      ]
+        originModule
+      ],
+      origin: {
+        showBorder: false
+      }
     }));
 
 
@@ -82,11 +82,11 @@ describe('origin', function() {
             canvas.getDefaultLayer();
           }]
         },
-        originModule,
-        {
-          config: [ 'value', { origin: { showBorder: false } } ]
-        }
-      ]
+        originModule
+      ],
+      origin: {
+        showBorder: false
+      }
     }));
 
 
@@ -113,17 +113,13 @@ describe('origin', function() {
 
     beforeEach(bootstrapDiagram({
       modules: [
-        originModule,
-        {
-          config: [ 'value', {
-            origin: {
-              showBorder: true,
-              borderColor: '#ff00ff',
-              crossColor: '#008000'
-            }
-          } ]
-        }
-      ]
+        originModule
+      ],
+      origin: {
+        showBorder: true,
+        borderColor: '#ff00ff',
+        crossColor: '#008000'
+      }
     }));
 
 
