@@ -46,6 +46,6 @@
     "watchify": "^3.9.0"
   },
   "peerDependencies": {
-    "diagram-js": "^0.x || ^1.x || ^2.x || ^3.x"
+    "diagram-js": "^0.x || ^1.x || ^2.x || ^3.x || ^4.x || ^5.x"
   }
 }
