@@ -117,8 +117,8 @@ describe('origin', function() {
       ],
       origin: {
         showBorder: true,
-        borderColor: '#ff00ff',
-        crossColor: '#008000'
+        borderColor: 'rgb(255, 0, 255)',
+        crossColor: 'rgb(0, 128, 0)'
       }
     }));
 
@@ -142,9 +142,9 @@ describe('origin', function() {
           border = layer.querySelector('.djs-origin-border');
 
       // then
-      expect(getFill(label)).to.eql('#008000');
-      expect(getStroke(cross)).to.eql('#008000');
-      expect(getStroke(border)).to.eql('#ff00ff');
+      expect(getFill(label)).to.eql('rgb(0, 128, 0)');
+      expect(getStroke(cross)).to.eql('rgb(0, 128, 0)');
+      expect(getStroke(border)).to.eql('rgb(255, 0, 255)');
     }));
 
   });
