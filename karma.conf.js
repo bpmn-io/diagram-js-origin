@@ -13,7 +13,7 @@ module.exports = function(karma) {
 
     reporters: [ 'progress' ],
 
-    browsers: [ 'PhantomJS' ],
+    browsers: [ 'ChromeHeadless' ],
 
     singleRun: true,
     autoWatch: false,
