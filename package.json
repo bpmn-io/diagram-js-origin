@@ -40,7 +40,7 @@
     "mocha": "^4.0.1",
     "mocha-test-container-support": "^0.1.0",
     "npm-run-all": "^4.1.2",
-    "puppeteer": "^18.0.5",
+    "puppeteer": "^19.3.0",
     "watchify": "^3.9.0"
   },
   "peerDependencies": {
