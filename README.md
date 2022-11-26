@@ -1,5 +1,7 @@
 # diagram-js-origin
 
+[![CI](https://github.com/bpmn-io/diagram-js-origin/actions/workflows/CI.yml/badge.svg)](https://github.com/bpmn-io/diagram-js-origin/actions/workflows/CI.yml)
+
 A point of origin cross and contour for diagram-js.
 
 ![Showing the cross added by the plug-in](./docs/origin.png)
