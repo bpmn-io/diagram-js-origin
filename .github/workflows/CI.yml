@@ -15,9 +15,9 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v5
+      uses: actions/checkout@v7
     - name: Use Node.js
-      uses: actions/setup-node@v5
+      uses: actions/setup-node@v7
       with:
         node-version: ${{ matrix.node-version }}
         cache: npm
@@ -36,4 +36,4 @@ jobs:
       run: npm run all
     - name: Upload coverage
       if: ${{ matrix.integration-deps == '' }}
-      uses: codecov/codecov-action@v5
+      uses: codecov/codecov-action@v7
