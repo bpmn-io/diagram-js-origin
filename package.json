@@ -39,7 +39,7 @@
     "karma-mocha": "^2.0.1",
     "mocha": "^4.0.1",
     "mocha-test-container-support": "^0.1.0",
-    "npm-run-all": "^4.1.2",
+    "npm-run-all2": "^9.0.3",
     "puppeteer": "^19.3.0",
     "watchify": "^3.9.0"
   },
