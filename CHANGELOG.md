@@ -6,7 +6,9 @@ All notable changes to [diagram-js-origin](https://github.com/bpmn-io/diagram-js
 
 ___Note:__ Yet to be released changes appear here.__
 
-* `DEPS`: update dev dependency `diagram-js` to `15.x`, move test toolchain to Babel 7
+## 1.4.2
+
+* `DEPS`: update to `tiny-svg@4`
 
 ## 1.4.1
 
